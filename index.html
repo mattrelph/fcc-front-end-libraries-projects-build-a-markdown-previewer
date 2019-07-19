@@ -1,0 +1,67 @@
+<!-- A no frills markdown previewer -->
+
+<div class="container">
+	<div class="row">
+		<div class="col"></div>
+		<div id="editorWindow" class="col-10">
+			<div class = "text-center h3" >Markdown Editor Area</div>
+		</div>
+		<div class = "col"></div>	
+	</div>
+	<div class="row">
+        <div class = "col"></div>
+        <div class = "col-10">      
+			<textarea id="editor" name="editor" onkeyup="upDatePreview()" autofocus>
+Enter your Github Flavored Markdown Text Here
+			
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			
+## Praesent orci tellus, semper sit amet varius ut, mattis non tellus. 
+			
+[GitHub](http://github.com)
+			
+> Nulla facilisi. Nullam porttitor mattis metus, sed lacinia turpis ullamcorper vitae. Quisque rutrum faucibus malesuada. Fusce aliquet orci elementum dui finibus, eget ultrices sem faucibus. Suspendisse potenti. Aliquam ligula massa, efficitur quis euismod et, molestie a ante. Pellentesque ex est, ullamcorper at blandit non, gravida vel ante. Nullam diam mi, finibus id porttitor quis, finibus ac nunc. Ut leo nisl, porttitor et tincidunt sit amet, suscipit pretium ex. Nunc eget varius libero. Sed luctus, dui at ultricies gravida, mi eros interdum felis, vitae congue nisl mi vitae nibh. Nunc sit amet turpis faucibus, condimentum orci id, luctus mauris. In interdum diam quis est auctor convallis.
+> Marcus Aurelius
+			
+`Sed nec ligula vel arcu imperdiet fermentum.` Curabitur vitae nunc eu lacus sagittis efficitur. Aliquam diam nulla, dapibus ut risus vel, sodales ullamcorper velit.' Nulla facilisi. Donec fringilla tincidunt augue iaculis mattis. In pharetra varius ipsum, ac viverra orci molestie non. Donec sed velit vel arcu iaculis dictum. Nam justo elit, tristique in ante eget, tristique pharetra nisl. Suspendisse potenti. Integer nibh ante, malesuada eu sollicitudin efficitur, vestibulum sed enim. Ut lobortis molestie est non viverra. Etiam ultrices libero et metus aliquam luctus. Cras nisl sapien, varius eu interdum nec, convallis in leo. Nulla mollis erat eu dui tempor, et mollis ante aliquet. **Aliquam iaculis tortor in lacus sagittis, a venenatis dolor ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
+			
+```
+Mauris lectus risus, volutpat vel orci vitae, fringilla iaculis ex. Pellentesque in diam sit amet odio congue bibendum. Mauris elit erat, maximus id mauris et, condimentum pharetra urna. Phasellus dapibus, felis eu semper tristique, tellus nisi sollicitudin purus, non rutrum enim ex vitae justo. Nam convallis nibh eget dui fermentum tincidunt. Cras consectetur eu est eget pretium. Integer ut pellentesque ex, quis convallis magna. Integer posuere sodales arcu, tincidunt porta arcu convallis scelerisque. Sed velit justo, semper at sem quis, sagittis egestas massa. Ut lacinia lorem est, eget imperdiet lorem laoreet vel. Pellentesque accumsan, tellus sit amet iaculis varius, leo ante pulvinar velit, ac vehicula nisi ipsum non ipsum. Aliquam quis pellentesque nunc. Nam nisl leo, venenatis quis felis in, tristique gravida purus. Suspendisse potenti. Integer metus odio, pretium vel commodo quis, ullamcorper et ligula.
+```
+			
+![Surge Mitigation](https://res.cloudinary.com/dlqvbphtt/image/upload/v1563551123/Surge_Modules.jpg)
+
+* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+* Sed pellentesque erat non leo interdum, non ultricies est pharetra.
+* Vivamus sed risus tempus, tincidunt sem ac, viverra odio.
+* Nullam eget neque ut felis accumsan aliquam nec vitae ligula.
+			
+			</textarea>
+			
+						
+	   </div>
+        <div class = "col"></div>        
+        
+    </div>
+
+
+	<div class="row">
+        <div class = "col"></div>
+		<div id="previewTitle" class="col-10">
+			<div class = "text-center h3">Markdown Preview Area</div>
+		</div>    
+        <div class = "col"></div>	  
+	</div>
+	<div class="row">
+        <div class = "col"></div>
+		<div id="previewRow" class="col-10">
+			<div id="preview">Preview Area</div>
+		</div>
+		<div class = "col"></div>        
+	</div>    
+</div>
+
+<!-- Uses https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js for testing -->
+<!-- Uses https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css for bootstrap -->
+<!-- Uses https://use.fontawesome.com/releases/v5.5.0/css/all.css for font awesome -->
+<!-- Uses https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.2/marked.js for markdown interpretation -->
